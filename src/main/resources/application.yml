@@ -1,0 +1,30 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9000
+  cloud:
+    gateway:
+      routes:
+        - id: SpringRestAndLombok
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/v1/*
+        - id: SpringReactive
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/v2/*
+
+
+      # ENABLE BELOW FOR TROUBLESHOOTING
+#      httpserver:
+#        wiretap: true
+#      httpclient:
+#        wiretap: true
+#logging:
+#  level:
+#    root: error
+#    reactor.netty: trace
+#    org.springframework.cloud.gateway: trace
+#    org.springframework.http.server.reactive: trace
