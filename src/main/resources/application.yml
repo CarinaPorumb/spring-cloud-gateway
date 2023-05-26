@@ -7,14 +7,18 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: SpringRestAndLombok
+        - id: PetClinic
           uri: http://localhost:8081
           predicates:
             - Path=/api/v1/*
-        - id: SpringReactive
+        - id: PetClinic-SpringReactive
           uri: http://localhost:8082
           predicates:
             - Path=/api/v2/*
+        - id: PetClinic-MongoDB
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/v3/*
 
 
       # ENABLE BELOW FOR TROUBLESHOOTING
