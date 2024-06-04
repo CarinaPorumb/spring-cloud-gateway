@@ -7,11 +7,11 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: PetClinic
+        - id: pet-clinic
           uri: http://localhost:8081
           predicates:
             - Path=/api/v1/*
-        - id: PetClinic-SpringReactive
+        - id: pet-clinic-webflux
           uri: http://localhost:8082
           predicates:
             - Path=/api/v2/*
