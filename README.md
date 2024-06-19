@@ -3,8 +3,7 @@
 A simple Java project using Spring Cloud Gateway to manage routing and secure endpoints with OAuth2, designed to work
 with other Spring-based projects.
 
-**Note: This project requires another repository to be set up and running for the OAuth2 Authorization
-Server. [OAuth2 Authorization Server Repository](https://github.com/CarinaPorumb/spring-oauth2)**
+**Note: This project requires the [OAuth2 Authorization Server](https://github.com/CarinaPorumb/spring-oauth2) to be set up and running. You can find the repository [here](https://github.com/CarinaPorumb/spring-oauth2).**
 
 ---
 
@@ -71,7 +70,7 @@ Once the application is running, it will be available at http://localhost:9000.
 
 <br>
 
-- #### 2. Clone and Set up the Spring Cloud Gateway Project
+- #### 2. Clone and Set Up the Spring Cloud Gateway Project
 
 After setting up the OAuth2 Authorization Server, clone and set up the Spring Cloud Gateway project:
 
